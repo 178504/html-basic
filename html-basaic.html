@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>このページのタイトル</title>
+		<meta name="descripition" content="このページの概要・説明文">
+		<style>
+			*{
+				border: 1px solid gray;
+			}
+		</style>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<h1>〇〇株式会社</h1>
+		</header>
+		<nav>
+			<ul><!--ul.liは箇条書きの要素-->
+				<li><a href="#">トップ</a></li>
+				<li><a href="#">会社概要</a></li>
+				<li><a href="#">事業内容</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section><!--セクションは「章立て」、部・章・節・項に内容を分割する要素-->
+				<h2>1.商品A</h2>
+				<p>商品Aの説明・・・</p>
+				<figure><!--figure要素は図表のセクションを表す。イラスト・図・写真・ソースコード等-->
+					<img src="goodsA.png" alt="プレゼント">
+					<figcaption>Present for You.</figcaption><!--figcaptionはfigure要素の説明分です。-->
+				</figure>
+			</section>
+				<section>
+					<h2>2.商品B</h2>
+					<p>商品Bの説明・・・</p>
+				<section>
+					<h3>2-1.商品B-1</h3>
+					<p>商品b-1の説明・・・</p>
+				</section>
+				<section>
+					<h3>2-2.商品B-2</h3>
+					<p>商品B-2の説明・・・</p>
+				</section>
+			</section>
+			<h2>ニュース</h2>
+			<p>最新ニュースをお知らせします。</p>
+			<article><!--articleは複数の記事ページを作成するときに使うのが望ましい-->
+				<h2>新商品発表</h2>
+				<p>本日新商品を発表しました・・・</p>
+			</article>
+			<article>
+				<h2>役員移動のお知らせ</h2>
+				<p>本日役員の移動が・・・</p>
+			</article>
+			<article>
+				<h2>支所新規開設</h2>
+				<p>本日、～に支所を開設・・・</p>
+			</article>
+		</main>
+		<footer>
+			<p><small>Copyright (C) 2023 〇〇株式会社.All rights reserved.</small></p>
+			<!--small要素は著作権を表示するために使いました。-->
+			<!--免責事項・警告・法的制約・著作権になります。-->
+		</footer>
+</body>
+</html>
