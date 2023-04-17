@@ -1,0 +1,15 @@
+div[class~="css2"]{
+  font-size: 30px;
+}
+
+div[class^="c"]{
+  background-color: green;
+}
+
+div[class$="3"]{
+  color: blue;
+}
+
+div[class*="a"]{
+  font-weight: bold;
+}

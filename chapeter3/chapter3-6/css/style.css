@@ -1,0 +1,23 @@
+.css1{
+  color: red;
+}
+
+p{
+  color: blue;
+}
+
+.text1{
+  color: red;
+}
+
+.tel1{
+  color: green;
+}
+
+input[type="text"]{
+  color: red;
+}
+
+input[type="tel"]{
+  color: green;
+}
