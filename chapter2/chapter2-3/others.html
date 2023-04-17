@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTMLの練習</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>箇条書き</h2>
+  <h3>順番の箇条書き(ol/reversed)</h3>
+  <ol>
+    <!--ol要素は先頭にNo.が入る順番の箇条書き-->
+    <li>国語</li>
+    <li>数学</li>
+    <li>英語</li>
+  </ol>
+  <ol reversed>
+    <!--reversed属性は箇条書きを逆にすることができる-->
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+  </ol>
+  <h3>順番のない箇条書き(ul)</h3>
+  <ul>
+    <!--ul/li順番のない箇条書き-->
+    <li>鉛筆</li>
+    <li>消しゴム</li>
+    <li>受講票</li>
+  </ul>
+  <h3>説明と解説(dl dt dd)</h3>
+  <dl><!--説明と解説（dl・dt・dd）-->
+    <dt>HTML</dt>
+    <dd>文書を構造化します</dd>
+    <dt>CSS</dt>
+    <dd>見た目を定義します</dd>
+    <dt>JavaScript</dt>
+    <dd>動きを定義します</dd>
+  </dl>
+  <h3>表(table tr th td caption)</h3>
+  <table>
+    <!--tableは表を表す-->
+    <caption>一覧表</caption><!--表と説明の解説-->
+    <tr><!--tr要素は横に並んだ一つの行-->
+      <th>氏名</th><!--thは表のヘッダー-->
+      <th>国語の点数</th>
+      <th>数学の点数</th>
+      <th>英語の点数</th>
+    </tr>
+    <tr>
+      <td>Aさん</td><!--td要素はテーブルを格納するセル-->
+      <td>90</td>
+      <td>80</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Bさん</td>
+      <td>90</td>
+      <td>80</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Cさん</td>
+      <td>90</td>
+      <td>80</td>
+      <td>70</td>
+    </tr>
+  </table>
+  <h3>整形済みフォーマット（pre）</h3>
+  <pre>皆さん、こんにちは。
+  中島です。
+
+
+  今日も楽しくHTMLを勉強しましょう。・・・</pre>
+  <h3>詳細の要素（details）</h3>
+  <details><!--details要素はユーザーが追加で得られる詳細情報-->
+    <summary>振込先はこちら</summary><!--summary子要素で折り畳み-->
+    <p>口座への振込先は、こちらです。</p>
+    <ul>
+      <li>銀行名：＊＊銀行</li>
+      <li>支店名：＊＊支店</li>
+      <li>銀行口座：＊＊＊＊</li>
+      <li>口座名義：＊＊＊＊</li>
+    </ul>
+  </details>
+  <h3>マーカー要素(mark)</h3>
+  <p>では皆さん、この俳句の「蝉」に注目しましょう。よく分かるようにハイライトを表示しています。皆さんは・・・</p>
+  <blockquote>
+    <p>静けさや<br>岩に染み入る<br><mark>蝉</mark>の声</p>
+  </blockquote>
+  <h3>進捗要素(progress)※max:最大値min:最小値value:進捗値</h3>
+  <p>進捗状況:<progress value="40" max="100">40%</progress></p>
+  <h3>メーターの要素(meter)</h3>
+  <p>測定状況(value=20):<meter value="20" min="0" max="100" optimum="0" low="30" high="80">20%</meter></p>
+  <p>測定状況(value=50):<meter value="50" min="0" max="100" optimum="0" low="30" high="80">20%</meter></p>
+  <p>測定状況(value=90):<meter value="90" min="0" max="100" optimum="0" low="30" high="80">20%</meter></p>
+  <h3>マルチメディア</h3>
+  <h4>audio</h4>
+  <p><audio src="audio1.mp3" controls></audio></p>
+  <p>
+    <audio controls><!--ブラウザによって再生できない時は複数ファイルを指定-->
+      <source src="/media/audio1.mp3" type="audio/mp3">
+      <source src="/media/audio2.wav" type="audio/wav">
+      <source src="/media/audio3.ogg" type="audio/ogg">
+    </audio>
+  </p>
+  <h4>video</h4>
+  <p><video src="video1.mp4" controls></video></p>
+  <p>
+    <video controls><!--ブラウザによって再生できない時は複数ファイルを指定-->
+      <source src="/media/video1.mp4" type="video/mp3">
+      <source src="/media/video2.webM" type="video/webM">
+      <source src="/media/video3.0gg" type="video/ogg">
+    </video>
+  </p>
+  <p><video src="video1.mp4" controls autoplay muted></video></p><!--autoplay muted 自動再生ミュート-->
+  <p><video src="video1.mp4"controls playsinline></video></p><!--playsinline属性はスマホの中でWebページを保ったまま動画を表示してくれる。-->
+  <h3><ruby>描画<rt>びょうが</rt></ruby>の要素</h3>
+  <h4>円グラフ</h4>
+  <canvas id="mycanvas1" width="200" height="200"></canvas>
+  <script>
+    const mycanvas1 = document.getElementById("mycanvas1");
+    const myctx1 = mycanvas1.getContext("2d");
+
+    //ひとつめの円グラフ
+    myctx1.beginPath();
+    myctx1.moveTo(100, 100);
+    myctx1.arc(100, 100, 80, deg(0), deg(200), false);
+    myctx1.closePath();
+    myctx1.fillStyle = "skyblue";
+    myctx1.fill();
+    //ふたつめの円グラフ
+    myctx1.beginPath();
+    myctx1.moveTo(100, 100);
+    myctx1.arc(100, 100, 80, deg(200), deg(360), false);
+    myctx1.closePath();
+    myctx1.fillStyle = "pink";
+    myctx1.fill();
+
+    function deg(deg) {
+      return (deg - 90) / 180 * Math.PI;
+    }
+  </script>
+
+  <h4>棒グラフ</h4>
+  <canvas id="mycanvas2" width="200" height="200"></canvas>
+
+  <script>
+    const mycanvas2 = document.getElementById("mycanvas2");
+    const myctx2 = mycanvas2.getContext("2d");
+
+    //ひとつめの棒グラフ
+    myctx2.fillStyle = "skyblue";
+    myctx2.fillRect(0, 200, 100, y(100));
+  
+    //ふたつめの棒グラフ
+    myctx2.fillStyle= "pink";
+    myctx2.fillRect(100, 200, 100, y(150));
+
+    function y(y){
+      return -y;
+    }
+
+  </script>
+
+  <h4>折れ線グラフ</h4>
+  <canvas id="mycanvas3" width="200" height="200"></canvas>
+  <script>
+    const mycanvas3=document.getElementById("mycanvas3");
+    const myctx3=mycanvas3.getContext("2d");
+    myctx3.strokeStyle="skyblue";
+
+    //折れ線グラフ
+    myctx3.beginPath();
+    myctx3.moveTo(0, y3(0));
+    myctx3.lineTo(100, y3(50));
+    myctx3.lineTo(200, y3(150));
+    myctx3.stroke();
+    function y3(y){
+      return 200-y;
+    }
+  </script>
+
+  <h3>フォーム</h3>
+  <h4>一行入力の要素(input)</h4>
+  <h5>text</h5>
+  <p>
+    <input type="text">
+  </p>
+
+  <h5>range</h5>
+  <p>
+    スライダ:<input type="range">
+  </p>
+
+  <h5>date</h5>
+  <p>
+    日付:<input type="date">
+  </p>
+
+    <h5>time</h5>
+    <p>
+      時間:<input type="time">
+    </p>
+
+    <h5>color</h5>
+    <p>
+      色:<input type="color">
+    </p>
+
+    <h5>number</h5>
+    <p>数字:<input type="number" min="0" max="50" step="2"></p>
+
+    <h5>tel</h5>
+    <p>電話:<input type="tel"></p>
+
+    <h5>url</h5>
+    <p>URL:<input type="url"></p>
+
+    <h5>email</h5>
+    <p>電子メール:<input type="email"></p>
+    
+    <h5>入力候補の要素(datalist)</h5>
+    <p>受けたいコース
+      <input type="text" name="course" list="html5">
+    </p>
+    <datalist id="html5">
+      <option value="マークアップ"></option>
+      <option value="CSS3"></option>
+      <option value="JavaScript"></option>
+    </datalist>
+
+    <h5>radio</h5>
+    <p>
+      <label>
+        <input type="radio">L
+      </label>
+      <label>
+        <input type="radio">M
+      </label>
+      <label>
+        <input type="radio">S
+      </label>
+    </p>
+
+    <h5>選択メニューの要素(select option)</h5>
+    <p>生年月を選んでください:
+      <select>
+        <option value="1">1月</option>
+        <option value="2">2月</option>
+        <option value="3">3月</option>
+        <option value="4">4月</option>
+        <option value="5">5月</option>
+        <option value="6">6月</option>
+        <option value="7">7月</option>
+        <option value="8">8月</option>
+        <option value="9">9月</option>
+        <option value="10">10月</option>
+        <option value="11">11月</option>
+        <option value="12">12月</option>
+      </select>
+    </p>
+
+    <h5>複数行入力の要素(textarea)</h5>
+    <p>
+      複数行入力:<textarea></textarea>
+    </p>
+
+    <h5>form</h5>
+    <form method="get" action="example.php">
+      <p>これはフォームです</p>
+      <p>
+        <input type="text"name="name">
+      </p>
+      <p>
+        <input type="submit" value="送信">
+      </p>
+    </form>
+
+    <h3>JavaScript</h3>
+    <script>
+      document.write("こんにちは")
+    </script>
+
+    <script src="script.js"></script>
+
+    <h4>そのほかの属性(contenteditable)</h4>
+    <div contenteditable="true">
+      クリックしてください。編集できます。
+    </div>
+    <h4>関連性を失った属性(hidden)</h4>
+    <p hidden>今は無関係な要素。結果的に表示されていない</p>
+
+</body>
+</html>
