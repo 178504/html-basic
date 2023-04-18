@@ -1,0 +1,88 @@
+h1{
+  font-size: 32px;
+  text-align: center;
+}
+
+p{
+  font-size: 2em;
+  color: #00f;
+  line-height: 2em;
+  text-align: left;
+}
+
+.css1{
+  font-style: normal;
+  color: #000;
+  font-weight: 100;
+}
+
+.css2{
+  color: #555;
+  text-align: right;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.css3{
+  color: #999;
+  text-align: center;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+.css4{
+  color: #fff;
+  background-color: #555;
+  text-align: justify;
+  font-weight: 700;
+}
+
+.css5{
+  color: #f00;
+  text-align: center;
+  font-weight: 900;
+}
+
+.css6{
+  color:#0f0;
+  text-align: left;
+  font-weight: bold;
+}
+
+.css7{
+  color: #00f;
+  text-align: right;
+  font-weight: bolder;
+}
+
+.css8{
+  color:rgb(255,0,0);
+  text-align: left;
+  font-weight: lighter;
+}
+
+.css9{
+  color: rgba(255,0,0,0.5);
+  text-align: center;
+  font-weight: 800;
+}
+
+.f1{
+  font-size: 32px;
+  font-family: serif;
+  text-align: right;
+  font-weight: bold;
+}
+
+.f2{
+  font-family: "arial","メイリオ","MS-pゴシック";
+  font-size: 32px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.f3{
+  line-height: 2em;
+  text-align: left;
+  font-weight: 100;
+}

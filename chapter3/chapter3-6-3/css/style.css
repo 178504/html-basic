@@ -8,6 +8,23 @@
   border: 3px solid red;
 }
 
+#box1+p{
+  font-size: 30px;
+}
+
 #box1 p{
   background-color: gray;
+}
+
+#box1>p{
+  color:  red;
+}
+
+#box1~p{
+  color: red;
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
