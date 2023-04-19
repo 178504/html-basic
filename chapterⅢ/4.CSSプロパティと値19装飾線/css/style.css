@@ -1,0 +1,23 @@
+p.css1{
+  text-decoration: underline;
+}
+
+p.css2{
+  text-decoration: overline;
+}
+
+p.css3{
+  text-decoration: line-through;
+}
+
+p.css4{
+  text-decoration: underline dotted gray;
+}
+
+p.css5{
+  text-decoration: underline overline lime;
+}
+
+a{
+  text-decoration: none;
+}
