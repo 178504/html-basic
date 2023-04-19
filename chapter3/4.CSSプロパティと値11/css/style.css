@@ -1,0 +1,11 @@
+p{
+  border: 1px solid gray;
+}
+
+.css1{
+  display: none;
+}
+
+.css2{
+  visibility: hidden;
+}
