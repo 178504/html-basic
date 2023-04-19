@@ -1,0 +1,22 @@
+div{
+  background-image: url(animal1.png);
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding: 50px;
+  border-style: dashed;
+  border: 50px dashed gray;
+  text-align: center;
+}
+
+.css1{
+  background-origin: border-box;
+}
+
+.css2{
+  background-origin: padding-box;
+}
+
+.css3{
+  background-origin: content-box;
+}

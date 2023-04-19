@@ -1,0 +1,26 @@
+div{
+  background-image: url(animal1.png);
+  margin: 200px;
+  height: 200px;
+  border-style: dashed;
+}
+
+.css1{
+  background-size: 100% 100%;
+}
+
+.css2{
+  background-size: 50% 50%;
+}
+
+.css3{
+  background-size: 25% 25%;
+}
+
+.css4{
+  background-size: cover;
+}
+
+.css5{
+  background-size: contain;
+}

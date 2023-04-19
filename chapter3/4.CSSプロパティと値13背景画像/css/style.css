@@ -1,0 +1,9 @@
+p{
+  background-color: #f00;
+}
+
+div{
+  background-image: url(animal1.png);
+  width: 200px;
+  height: 200px;
+}
