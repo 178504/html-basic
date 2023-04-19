@@ -1,0 +1,24 @@
+p{
+border: 3px solid gray;
+border-width: 2px 10px 2px 10px;
+}
+
+.css1{
+  border-style: solid;
+}
+
+.css2{
+  border-style: dashed;
+}
+
+.css3{
+  border-style: dotted;
+}
+
+.css4{
+  border-style: double;
+}
+
+.css5{
+  border-color:red blue green yellow ;
+}

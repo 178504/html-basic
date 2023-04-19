@@ -1,0 +1,21 @@
+h1{
+  text-align: center;
+}
+
+p{
+  color: skyblue;
+  font-size: 32px;
+  font-family: serif;
+  border: 1px solid gray;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+div{
+  min-width: 300px;
+  max-width: 600px;
+  min-height: 300px;
+  max-height: 600px;
+  border: 1px solid gray;
+}
