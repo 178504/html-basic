@@ -1,0 +1,7 @@
+li:nth-of-type(odd){
+  background-color: #ffc0cb;
+}
+
+li:nth-of-type(even){
+  background-color: #87ceeb;
+}
