@@ -1,0 +1,7 @@
+dt:first-child{
+  color: #f00;
+}
+
+dt:last-child{
+  color: #00f;
+}

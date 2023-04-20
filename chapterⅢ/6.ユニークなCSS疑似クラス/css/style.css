@@ -1,0 +1,7 @@
+li:first-of-type{
+  color: #f00;
+}
+
+li:last-of-type{
+  color: #00f;
+}
