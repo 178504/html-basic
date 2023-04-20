@@ -1,0 +1,21 @@
+div{
+  width: 200px;
+  height: 100px;
+  margin: 10px 0 50px 10px;
+  border: 1px solid gray;
+}
+.css1{
+  overflow: hidden;
+}
+
+.css2{
+  overflow: visible;
+}
+
+.css3{
+  overflow: scroll;
+}
+
+.css4{
+  overflow: auto;
+}

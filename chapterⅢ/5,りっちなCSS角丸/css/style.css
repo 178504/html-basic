@@ -1,0 +1,30 @@
+div{
+  border: 1px solid gray;
+  background-image: url(haikei1.png);
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+}
+
+.css1{
+  border-radius: 10px;
+}
+
+.css2{
+  border-radius: 300px;
+}
+
+.css3{
+  border-radius: 200px 100px 50px 10px;
+}
+
+.css4{
+  border-top-left-radius: 250px;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 25px;
+}
+
+.box{
+  border-radius: 10px 20px 30px 40px/50px 60px 70px 80px;
+}

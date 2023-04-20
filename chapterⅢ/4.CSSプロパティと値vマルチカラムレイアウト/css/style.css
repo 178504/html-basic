@@ -1,0 +1,15 @@
+.col{
+  width: 800px;
+  column-width: 100px;
+  column-count: 4;
+  column-rule: 3px dotted #f00;
+  column-gap:80px;
+}
+
+h2{
+  background-color: #aaa;
+}
+
+.css2{
+  column-span: all;
+}

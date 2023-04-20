@@ -1,0 +1,28 @@
+div{
+  border: 1px solid gray;
+  width: 300px;
+  height: 300px;
+}
+
+#parent{
+  position: relative;
+  background-color: #ff0;
+}
+
+#child1{
+  position: absolute;
+  background-color: #00f;
+  top: 80px;
+  left: 80px;
+  width: 100px;
+  height: 100px;
+}
+
+#child2{
+  position: absolute;
+  background-color: #f00;
+  top: 120px;
+  left: 120px;
+  width: 100px;
+  height: 100px;
+}
