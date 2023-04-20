@@ -1,0 +1,44 @@
+div{
+  border: 1px solid #808080;
+  width: 300px;
+  height: 100px;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 100px;
+}
+
+.css1{
+  background: linear-gradient(#fff,#808080);
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.css2{
+  background: linear-gradient(#f00,#fff,#008000);
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.css3{
+  background: linear-gradient(#f00 33%,#fff 33% 66%,#008000 66%);
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.css4{
+  background: radial-gradient(#fff,#008000);
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.css5{
+  background: radial-gradient(#fff 30%,#008000 60%);
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.css6{
+  background: radial-gradient(at bottom,#fff 30%,#008000 60%);
+  font-weight: 800;
+  font-size: 32px;
+}

@@ -1,0 +1,69 @@
+div{
+  border: 1px solid gray;
+  width: 200px;
+  height: 200px;
+  margin: 80px auto;
+  background-image: url(animal1.png);
+}
+
+h1{
+  border: 1px solid #808080;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin: auto;
+}
+.css1-r{
+  box-shadow: 30px 0 0 #808080;
+}
+
+.css1-l{
+  box-shadow: -30px 0 0 #808080;
+}
+
+.css2-b{
+  box-shadow: 0 30px 0 #808080;
+}
+
+.css2-u{
+  box-shadow: 0 -30px 0 #808080;
+}
+
+.css3{
+  box-shadow: 30px 30px 0px #808080;
+}
+
+.css4{
+  box-shadow: 30px 30px 30px #808080;
+}
+
+.css5-big{
+  box-shadow: 30px 30px 30px 20px #808080;
+}
+
+.css5-small{
+  box-shadow: 30px 30px 20px -5px #808080;
+}
+
+.css1-a{
+  text-shadow: 10px 0 0 #808080;
+}
+.css1-b{
+  text-shadow: -10px 0 0 #808080;
+}
+.css2-c{
+  text-shadow: 0 10px 0 #808080;
+}
+.css2-d{
+  text-shadow: 0 -10px 0 #808080;
+}
+
+.css3-e{
+  text-shadow: 10px 10px 3px #808080;
+}
+.css4-f{
+  background-color: #000;
+  color: #808080;
+  text-shadow: -1px -1px 0 #fff;
+}
