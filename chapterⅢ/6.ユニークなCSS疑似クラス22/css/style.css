@@ -1,0 +1,47 @@
+div{
+  width: 200px;
+  height: 200px;
+  background-image: url(animal1.png);
+  margin: 50px;
+  display: inline-block;
+}
+
+.css1{
+  filter: brightness(200%);
+}
+
+.css2{
+  filter: contrast(200%);
+}
+
+.css3{
+  filter: grayscale(100%);
+}
+
+.css4{
+  filter: saturate(50%);
+}
+
+.css5{
+  filter: sepia(100%);
+}
+
+.css6{
+  filter: hue-rotate(90deg);
+}
+
+.css7{
+  filter: invert(35%);
+}
+
+.css8{
+  filter: blur(5px);
+}
+
+.css9{
+  filter: opacity(30%);
+}
+
+.css10{
+  filter: drop-shadow(10px 10px 10px #808080);
+}
