@@ -1,0 +1,51 @@
+#parent{
+  position: relative;
+  height: 100px;
+  width: 600px;
+  margin: 50px auto;
+  border: 1px solid #808080;
+}
+
+.child{
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  background-size: contain;
+  font-size: 90px;
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  animation: daihon 3s linear 0s infinite normal;
+}
+
+@keyframes daihon {
+  0% {
+    transform: translate(-300px, 0px);
+    opacity:0;
+  }
+  10%,90%{opacity: 1;}
+  100% {
+    transform: translate(300px, 0px);
+    opacity: 0;
+  }
+}
+
+#child1{
+  animation-delay: 0s;
+  background-image: url(animal1.png);
+}
+
+#child2{
+  animation-delay: -1s;
+  background-image: url(animal2.png);
+}
+
+#child3{
+  animation-delay: -2s;
+  background-image: url(animal3.png);
+}
