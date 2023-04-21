@@ -1,0 +1,19 @@
+ol{
+  list-style-type: none;
+}
+
+li{
+  counter-increment: animalGroup;
+}
+
+li::before{
+  content:"第" counter(animalGroup)"位";
+}
+.reset{
+  counter-reset: animalGroup;
+}
+p{
+  font-size: 32px;
+  font-weight: 800;
+  background-color: #f00;
+}

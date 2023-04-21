@@ -1,0 +1,7 @@
+input:enabled{
+  background-color: #fff;
+}
+
+input:disabled{
+  background-color: #999;
+}

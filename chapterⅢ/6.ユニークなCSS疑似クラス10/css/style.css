@@ -1,0 +1,11 @@
+.css2:focus{
+  color: #00f;
+}
+
+.css2:hover{
+  color: #f00;
+}
+
+.css2:active{
+  color: #008000
+}
