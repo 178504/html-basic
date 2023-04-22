@@ -48,3 +48,160 @@ header {
   font-size: 1.85rem;
   font-family: 'Passion One', cursive;
 }
+
+/* main_visaulのスタイル */
+
+.main_visual_area {
+  text-align: center;
+  background-color: #140704;
+}
+.images_wrapper {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.image_below {
+  z-index:0;
+  width: 1000px;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #140704;
+}
+
+.image_above {
+  z-index:10;
+  width: 1000px;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  transition: opacity 1.2s linear;
+}
+
+.image_above:hover {
+  opacity:1;
+  transition: opacity 1.2s linear;
+}
+/* ナビゲーションのスタイル */
+
+.global_navi {
+  background-color: #346435;
+  padding: 6px;
+}
+.navi_items_wrapper {
+  display: flex;
+  column-gap: 6px;
+}
+.global_navi a {
+  display: block;
+  width: 246px;
+  height: 48px;
+  line-height: 48px;
+  border-radius:10px;
+  background-color: #1e320a;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* セクションごとのスタイル */
+
+section h1 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.concept_area {
+  margin: 80px 200px;
+}
+.concept_area_text {
+  margin-top: 40px;
+  line-height: 1.8;
+  padding-bottom:20px;
+  border-bottom:#346435 dashed 1px;
+}
+.about_virus {
+  text-align: right;
+}
+.about_virus a {
+  color: #346435;
+  text-decoration: none;
+}
+.special_area {
+  margin: 150px 100px;
+  background: rgba(255,255,255,0.4) url('../images/special_bg.png') no-repeat;
+  padding:40px;
+}
+.special_area h1 , .access_area h1{
+margin-bottom: 20px;
+}
+.special_content_wrapper {
+  column-gap: 40px;
+  margin-bottom: 60px;
+}
+.special_area h2 {
+  font-size:1.2rem;
+  border-bottom:#333333 solid 1px;
+  margin-bottom: 4px;
+}
+.special_area_text {
+  position:relative;
+}
+.special_menu_price {
+  text-align: right;  
+  margin-top:4px;
+  font-style: oblique;
+  font-weight: bold;
+}
+.to_sweets_link {
+  position:absolute;
+  bottom:0;
+  right:0;
+  background:#1f6421 url('../images/to_link.svg') no-repeat right center;
+  background-size: 20px;
+  color: #ffffff;
+  width: 240px;
+  line-height: 40px;
+  border:none;
+  border-radius: 20px;
+}
+.to_top_link {
+  text-align: right;
+}
+.to_top_link a{
+  background: url('../images/to_top1.svg') no-repeat left center;
+  padding-left: 24px;
+  text-decoration: none;
+  color: #1e320a;
+}
+
+.special_area img {
+  width:320px;
+}
+/*アクセス情報製作*/
+.access_area{
+  margin: 40px 60px;
+  padding: 40px;
+  text-align: center;
+}
+.access_area table{
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto 40px auto;
+  text-align: left;
+}
+
+th,td{
+  padding: 8px;
+  border: solid 1px #ffffff;
+}
+
+tr:nth-of-type(even) th, tr:nth-of-type(even) td{
+  background-color: #f2e2c2;
+}
+tr:nth-of-type(odd) th, tr:nth-of-type(odd) td{
+  background-color: #ffefcf;
+}
