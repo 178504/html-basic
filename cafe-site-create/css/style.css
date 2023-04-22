@@ -181,27 +181,93 @@ margin-bottom: 20px;
 .special_area img {
   width:320px;
 }
-/*アクセス情報製作*/
-.access_area{
+.access_area {
   margin: 40px 60px;
-  padding: 40px;
+  padding:40px;
   text-align: center;
 }
-.access_area table{
+
+.access_area table {
   border-collapse: collapse;
   width: 80%;
   margin: 0 auto 40px auto;
   text-align: left;
 }
-
-th,td{
+th, td {
   padding: 8px;
-  border: solid 1px #ffffff;
+  border:solid 1px #ffffff;
+}
+tr:nth-of-type(even) th, tr:nth-of-type(even) td  {
+  background-color:#f2e2c2;
+}
+tr:nth-of-type(odd) th, tr:nth-of-type(odd) td  {
+  background-color:#ffefcf;
 }
 
-tr:nth-of-type(even) th, tr:nth-of-type(even) td{
-  background-color: #f2e2c2;
+/* お問合せ */
+aside h1 {
+  font-size: 1.4rem;
+  text-align: center;
 }
-tr:nth-of-type(odd) th, tr:nth-of-type(odd) td{
-  background-color: #ffefcf;
+.inquiry_area {
+  width:760px;
+  margin: 60px auto;
+  padding:30px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.inquiry_form {
+  width:640px;
+  margin:0 auto;
+}
+.inquiry_form dt{
+  font-weight: bold;
+  line-height: 3rem;
+}
+.inquiry_form dd {
+  margin-top:-3rem;
+  line-height: 3rem;
+  margin-left: 12rem;
+}
+input[type="text"], input[type="email"] {
+  width: 60%;
+  padding: 6px;
+}
+textarea {
+  width: 100%;
+}
+.form_btn_area {
+  text-align: center;
+}
+.form_submit_btn {
+  background: #225588;
+  color: #ffffff;
+  border-radius: 10px;
+  padding:20px 60px;
+  border:none;
+}
+.form_submit_btn:hover {
+  opacity:0.6;
+}
+.to_privacy {
+  text-align: right;
+}
+.to_privacy a {
+  text-decoration: none;
+  color:#333333;
+}
+footer {
+  background-color: #290e08;
+  color:#ffffff;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+.footer_navi_list {
+  display: flex;
+  justify-content: space-between;
+  width:800px;
+  margin:0 auto;
+}
+footer a {
+  color: #ffffff;
 }
